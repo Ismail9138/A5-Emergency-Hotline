@@ -8,3 +8,13 @@
 .roboto {
   font-family: "Roboto", sans-serif;
 }
+.hide {
+  display: none;
+}
+
+/* @media and (max-width: 48rem) {
+  .card-section {
+    display: grid;
+    grid-template: col;
+  }
+} */

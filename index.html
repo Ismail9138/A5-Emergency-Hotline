@@ -44,7 +44,9 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body>
-    <nav class="flex justify-between items-center w-[1920px] m-auto py-6 px-15">
+    <nav
+      class="flex justify-between items-center m-auto py-6 px-15 md:flex-row flex-col"
+    >
       <div class="flex items-center gap-2">
         <img class="w-[49px] h-[49px]" src="./assets/logo.png" alt="" />
         <h1 class="text-[#006747] font-extrabold text-xl">
@@ -53,7 +55,7 @@
         </h1>
       </div>
 
-      <div class="flex items-center gap-5">
+      <div class="flex items-center gap-5 md:flex md:gap-2">
         <div class="bg-[#41ff6b1a] w-32 h-14 p-[12px] rounded-full">
           <div class="flex items-center justify-center gap-4">
             <h2 class="inter font-black text-lg">0</h2>
@@ -81,7 +83,7 @@
       <!-- banner-section -->
       <section class="text-center">
         <div
-          class="bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] py-4 w-[1920px] m-auto"
+          class="bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] py-4 m-auto"
         >
           <img class="w-24 h-24 m-auto" src="./assets/logo-dark.png" alt="" />
           <h2 class="hind text-4xl font-bold my-3 text-white">
@@ -94,11 +96,13 @@
         </div>
       </section>
 
-      <!-- card section -->
       <section
-        class="w-11/12 mx-auto py-10 grid grid-cols-12 gap-8 bg-slate-200 h[100vh] w-[1920px] p-10"
+        class="w-11/12 md:w-12/12 mx-auto py-10 grid grid-cols-12 gap-8 bg-slate-200 h[100vh] p-5"
       >
-        <section class="bg-slate-200 grid grid-cols-3 gap-5 col-span-9">
+        <!-- card section -->
+        <section
+          class="bg-slate-200 grid grid-cols-1 md:grid-cols-2 lg:grid lg:grid-cols-3 gap-5 lg:col-span-9 md:col-span-12 col-span-12"
+        >
           <div class="p-5 bg-white rounded-lg shadow-md">
             <div class="          ">
               <div class="flex items-center justify-between mb-3">
@@ -120,12 +124,12 @@
                 </p>
               </div>
               <button
-                class="py-3 px-14 border-gray-300 rounded-lg text-[#5C5C5C] roboto w-[49%]"
+                class="py-3 px-5 md:px-2 md:py-1 border-gray-300 rounded-lg text-[#5C5C5C] roboto w-[49%] md:w-[48%]"
               >
                 <i class="fa-solid fa-copy"></i> Copy
               </button>
               <button
-                class="py-3 px-14 bg-green-600 border-green-500 rounded-lg text-white roboto w-[49%]"
+                class="py-3 px-5 md:px-2 md:py-1 bg-green-600 border-green-500 rounded-lg text-white roboto w-[49%] md:w-[48%]"
               >
                 <i class="fa-solid fa-phone"></i> Call
               </button>
@@ -152,12 +156,12 @@
                 </p>
               </div>
               <button
-                class="py-3 px-14 border-gray-300 rounded-lg text-[#5C5C5C] roboto w-[49%]"
+                class="py-3 px-5 md:px-2 md:py-1 border-gray-300 rounded-lg text-[#5C5C5C] roboto w-[49%]"
               >
                 <i class="fa-solid fa-copy"></i> Copy
               </button>
               <button
-                class="py-3 px-14 bg-green-600 border-green-500 rounded-lg text-white roboto w-[49%]"
+                class="py-3 px-5 md:px-2 md:py-1 bg-green-600 border-green-500 rounded-lg text-white roboto w-[49%]"
               >
                 <i class="fa-solid fa-phone"></i> Call
               </button>
@@ -184,12 +188,12 @@
                 </p>
               </div>
               <button
-                class="py-3 px-14 border-gray-300 rounded-lg text-[#5C5C5C] roboto w-[49%]"
+                class="py-3 px-5 md:px-2 md:py-1 border-gray-300 rounded-lg text-[#5C5C5C] roboto w-[49%]"
               >
                 <i class="fa-solid fa-copy"></i> Copy
               </button>
               <button
-                class="py-3 px-14 bg-green-600 border-green-500 rounded-lg text-white roboto w-[49%]"
+                class="py-3 px-5 md:px-2 md:py-1 bg-green-600 border-green-500 rounded-lg text-white roboto w-[49%]"
               >
                 <i class="fa-solid fa-phone"></i> Call
               </button>
@@ -216,12 +220,12 @@
                 </p>
               </div>
               <button
-                class="py-3 px-14 border-gray-300 rounded-lg text-[#5C5C5C] roboto w-[49%]"
+                class="py-3 px-5 md:px-2 md:py-1 border-gray-300 rounded-lg text-[#5C5C5C] roboto w-[49%]"
               >
                 <i class="fa-solid fa-copy"></i> Copy
               </button>
               <button
-                class="py-3 px-14 bg-green-600 border-green-500 rounded-lg text-white roboto w-[49%]"
+                class="py-3 px-5 md:px-2 md:py-1 bg-green-600 border-green-500 rounded-lg text-white roboto w-[49%]"
               >
                 <i class="fa-solid fa-phone"></i> Call
               </button>
@@ -248,12 +252,12 @@
                 </p>
               </div>
               <button
-                class="py-3 px-14 border-gray-300 rounded-lg text-[#5C5C5C] roboto w-[49%]"
+                class="py-3 px-5 md:px-2 md:py-1 border-gray-300 rounded-lg text-[#5C5C5C] roboto w-[49%]"
               >
                 <i class="fa-solid fa-copy"></i> Copy
               </button>
               <button
-                class="py-3 px-14 bg-green-600 border-green-500 rounded-lg text-white roboto w-[49%]"
+                class="py-3 px-5 md:px-2 md:py-1 bg-green-600 border-green-500 rounded-lg text-white roboto w-[49%]"
               >
                 <i class="fa-solid fa-phone"></i> Call
               </button>
@@ -280,12 +284,12 @@
                 </p>
               </div>
               <button
-                class="py-3 px-14 border-gray-300 rounded-lg text-[#5C5C5C] roboto w-[49%]"
+                class="py-3 px-5 md:px-2 md:py-1 border-gray-300 rounded-lg text-[#5C5C5C] roboto w-[49%]"
               >
                 <i class="fa-solid fa-copy"></i> Copy
               </button>
               <button
-                class="py-3 px-14 bg-green-600 border-green-500 rounded-lg text-white roboto w-[49%]"
+                class="py-3 px-5 md:px-2 md:py-1 bg-green-600 border-green-500 rounded-lg text-white roboto w-[49%]"
               >
                 <i class="fa-solid fa-phone"></i> Call
               </button>
@@ -312,12 +316,12 @@
                 </p>
               </div>
               <button
-                class="py-3 px-14 border-gray-300 rounded-lg text-[#5C5C5C] roboto w-[49%]"
+                class="py-3 px-5 md:px-2 md:py-1 border-gray-300 rounded-lg text-[#5C5C5C] roboto w-[49%]"
               >
                 <i class="fa-solid fa-copy"></i> Copy
               </button>
               <button
-                class="py-3 px-14 bg-green-600 border-green-500 rounded-lg text-white roboto w-[49%]"
+                class="py-3 px-5 md:px-2 md:py-1 bg-green-600 border-green-500 rounded-lg text-white roboto w-[49%]"
               >
                 <i class="fa-solid fa-phone"></i> Call
               </button>
@@ -344,12 +348,12 @@
                 </p>
               </div>
               <button
-                class="py-3 px-14 border-gray-300 rounded-lg text-[#5C5C5C] roboto w-[49%]"
+                class="py-3 px-5 md:px-2 md:py-1 border-gray-300 rounded-lg text-[#5C5C5C] roboto w-[49%]"
               >
                 <i class="fa-solid fa-copy"></i> Copy
               </button>
               <button
-                class="py-3 px-14 bg-green-600 border-green-500 rounded-lg text-white roboto w-[49%]"
+                class="py-3 px-5 md:px-2 md:py-1 bg-green-600 border-green-500 rounded-lg text-white roboto w-[49%]"
               >
                 <i class="fa-solid fa-phone"></i> Call
               </button>
@@ -376,12 +380,12 @@
                 </p>
               </div>
               <button
-                class="py-3 px-14 border-gray-300 rounded-lg text-[#5C5C5C] roboto w-[49%]"
+                class="py-3 px-5 md:px-2 md:py-1 border-gray-300 rounded-lg text-[#5C5C5C] roboto w-[49%]"
               >
                 <i class="fa-solid fa-copy"></i> Copy
               </button>
               <button
-                class="py-3 px-14 bg-green-600 border-green-500 rounded-lg text-white roboto w-[49%]"
+                class="py-3 px-5 md:px-2 md:py-1 bg-green-600 border-green-500 rounded-lg text-white roboto w-[49%]"
               >
                 <i class="fa-solid fa-phone"></i> Call
               </button>
@@ -391,7 +395,9 @@
 
         <!-- section history -->
 
-        <section class="bg-white col-span-3 shadow-md p-6 rounded-lg">
+        <section
+          class="bg-white lg:col-span-3 shadow-md p-6 rounded-lg md:col-span-12 col-span-12"
+        >
           <div class="flex items-center justify-between mb-5">
             <div class="flex items-center gap-2">
               <i class="fa-regular fa-clock"></i>
@@ -399,7 +405,7 @@
             </div>
             <div>
               <button
-                class="bg-[#00a63e] w-32 h-14 p-[12px] rounded-full text-white font-bold text-lg"
+                class="bg-[#00a63e] px-4 py-2 rounded-lg text-white font-bold text-lg"
               >
                 Clear
               </button>
