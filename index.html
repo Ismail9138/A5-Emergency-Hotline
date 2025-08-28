@@ -58,14 +58,18 @@
       <div class="flex items-center gap-5 md:flex md:gap-2">
         <div class="bg-[#41ff6b1a] w-32 h-14 p-[12px] rounded-full">
           <div class="flex items-center justify-center gap-4">
-            <h2 class="inter font-black text-lg">0</h2>
+            <h2 class="inter font-black text-lg">
+              <span id="heart-count">0</span>
+            </h2>
             <img class="w-[23px] h-[23px]" src="./assets/heart.png" alt="" />
           </div>
         </div>
 
         <div class="bg-[#41ff6b1a] w-32 h-14 p-[12px] rounded-full">
           <div class="flex items-center justify-center gap-4">
-            <h2 class="inter font-black text-lg">100</h2>
+            <h2 class="inter font-black text-lg">
+              <span id="coin-count">100</span>
+            </h2>
             <img class="w-[23px] h-[23px]" src="./assets/coin.png" alt="" />
           </div>
         </div>
@@ -74,7 +78,7 @@
           <button
             class="bg-[#00a63e] w-32 h-14 p-[12px] rounded-full text-white font-bold text-lg"
           >
-            <span>2</span> Copy
+            <span id="copy-count">0</span> Copy
           </button>
         </div>
       </div>
@@ -103,20 +107,24 @@
         <section
           class="bg-slate-200 grid grid-cols-1 md:grid-cols-2 lg:grid lg:grid-cols-3 gap-5 lg:col-span-9 md:col-span-12 col-span-12"
         >
-          <div class="p-5 bg-white rounded-lg shadow-md">
+          <div class="card p-5 bg-white rounded-lg shadow-md">
             <div class="          ">
               <div class="flex items-center justify-between mb-3">
                 <figure class="bg-[#FFE3E2] p-3 w-14 h-14 rounded-lg">
                   <img src="./assets/emergency.png " alt="" />
                 </figure>
-                <span class=""><i class="fa-regular fa-heart"></i></span>
+                <span class="heart"><i class="fa-regular fa-heart"></i></span>
               </div>
               <div class="my-5">
-                <h3 class="text-2xl font-bold hind">জাতীয় জরুরি সেবা</h3>
+                <h3 class="text-2xl font-bold hind service-name">
+                  জাতীয় জরুরি সেবা
+                </h3>
                 <p class="roboto text-[#5C5C5C]">National Emergency</p>
               </div>
               <div class="mb-5">
-                <h2 class="text-3xl font-bold roboto">999</h2>
+                <h2 class="text-3xl font-bold roboto number service-number">
+                  999
+                </h2>
                 <p
                   class="bg-[#F2F2F2] text-[#5C5C5C] py-3 px-6 w-29 rounded-full"
                 >
@@ -124,31 +132,33 @@
                 </p>
               </div>
               <button
-                class="py-3 px-5 md:px-2 md:py-1 border-gray-300 rounded-lg text-[#5C5C5C] roboto w-[49%] md:w-[48%]"
+                class="py-3 px-5 md:px-2 md:py-1 border-2 copy-btn border-gray-300 rounded-lg text-[#5C5C5C] roboto w-[49%] md:w-[48%]"
               >
                 <i class="fa-solid fa-copy"></i> Copy
               </button>
               <button
-                class="py-3 px-5 md:px-2 md:py-1 bg-green-600 border-green-500 rounded-lg text-white roboto w-[49%] md:w-[48%]"
+                class="py-3 px-5 md:px-2 md:py-1 bg-green-600 border-green-500 rounded-lg text-white roboto w-[49%] md:w-[48%] call-btn"
               >
                 <i class="fa-solid fa-phone"></i> Call
               </button>
             </div>
           </div>
-          <div class="p-5 bg-white rounded-lg shadow-md">
+          <div class="card p-5 bg-white rounded-lg shadow-md">
             <div class="          ">
               <div class="flex items-center justify-between mb-3">
                 <figure class="bg-[#FFE3E2] p-3 w-14 h-14 rounded-lg">
                   <img src="./assets/police.png " alt="" />
                 </figure>
-                <span class=""><i class="fa-regular fa-heart"></i></span>
+                <span class="heart"><i class="fa-regular fa-heart"></i></span>
               </div>
               <div class="my-5">
-                <h3 class="text-2xl font-bold hind">পুলিশ</h3>
+                <h3 class="text-2xl font-bold hind service-name">পুলিশ</h3>
                 <p class="roboto text-[#5C5C5C]">Police</p>
               </div>
               <div class="mb-5">
-                <h2 class="text-3xl font-bold roboto">999</h2>
+                <h2 class="text-3xl font-bold roboto number service-number">
+                  999
+                </h2>
                 <p
                   class="bg-[#F2F2F2] text-[#5C5C5C] py-3 px-6 w-29 rounded-full"
                 >
@@ -156,31 +166,35 @@
                 </p>
               </div>
               <button
-                class="py-3 px-5 md:px-2 md:py-1 border-gray-300 rounded-lg text-[#5C5C5C] roboto w-[49%]"
+                class="py-3 px-5 md:px-2 md:py-1 border-2 copy-btn border-gray-300 rounded-lg text-[#5C5C5C] roboto w-[49%]"
               >
                 <i class="fa-solid fa-copy"></i> Copy
               </button>
               <button
-                class="py-3 px-5 md:px-2 md:py-1 bg-green-600 border-green-500 rounded-lg text-white roboto w-[49%]"
+                class="py-3 px-5 md:px-2 md:py-1 bg-green-600 border-green-500 rounded-lg text-white roboto w-[49%] call-btn"
               >
                 <i class="fa-solid fa-phone"></i> Call
               </button>
             </div>
           </div>
-          <div class="p-5 bg-white rounded-lg shadow-md">
+          <div class="card p-5 bg-white rounded-lg shadow-md">
             <div class="          ">
               <div class="flex items-center justify-between mb-3">
                 <figure class="bg-[#FFE3E2] p-3 w-14 h-14 rounded-lg">
                   <img src="./assets/fire-service.png" alt="" />
                 </figure>
-                <span class=""><i class="fa-regular fa-heart"></i></span>
+                <span class="heart"><i class="fa-regular fa-heart"></i></span>
               </div>
               <div class="my-5">
-                <h3 class="text-2xl font-bold hind">ফায়ার সার্ভিস</h3>
+                <h3 class="text-2xl font-bold hind service-name">
+                  ফায়ার সার্ভিস
+                </h3>
                 <p class="roboto text-[#5C5C5C]">Fire Service</p>
               </div>
               <div class="mb-5">
-                <h2 class="text-3xl font-bold roboto">999</h2>
+                <h2 class="text-3xl font-bold roboto number service-number">
+                  999
+                </h2>
                 <p
                   class="bg-[#F2F2F2] text-[#5C5C5C] py-3 px-6 w-29 rounded-full"
                 >
@@ -188,31 +202,35 @@
                 </p>
               </div>
               <button
-                class="py-3 px-5 md:px-2 md:py-1 border-gray-300 rounded-lg text-[#5C5C5C] roboto w-[49%]"
+                class="py-3 px-5 md:px-2 md:py-1 border-2 copy-btn border-gray-300 rounded-lg text-[#5C5C5C] roboto w-[49%]"
               >
                 <i class="fa-solid fa-copy"></i> Copy
               </button>
               <button
-                class="py-3 px-5 md:px-2 md:py-1 bg-green-600 border-green-500 rounded-lg text-white roboto w-[49%]"
+                class="py-3 px-5 md:px-2 md:py-1 bg-green-600 border-green-500 rounded-lg text-white roboto w-[49%] call-btn"
               >
                 <i class="fa-solid fa-phone"></i> Call
               </button>
             </div>
           </div>
-          <div class="p-5 bg-white rounded-lg shadow-md">
+          <div class="card p-5 bg-white rounded-lg shadow-md">
             <div class="          ">
               <div class="flex items-center justify-between mb-3">
                 <figure class="bg-[#FFE3E2] p-3 w-14 h-14 rounded-lg">
                   <img src="./assets/ambulance.png" alt="" />
                 </figure>
-                <span class=""><i class="fa-regular fa-heart"></i></span>
+                <span class="heart"><i class="fa-regular fa-heart"></i></span>
               </div>
               <div class="my-5">
-                <h3 class="text-2xl font-bold hind">অ্যাম্বুলেন্স</h3>
+                <h3 class="text-2xl font-bold hind service-name">
+                  অ্যাম্বুলেন্স
+                </h3>
                 <p class="roboto text-[#5C5C5C]">Ambulance</p>
               </div>
               <div class="mb-5">
-                <h2 class="text-3xl font-bold roboto">1994-999999</h2>
+                <h2 class="text-3xl font-bold roboto number service-number">
+                  1994-999999
+                </h2>
                 <p
                   class="bg-[#F2F2F2] text-[#5C5C5C] py-3 px-6 w-29 rounded-full"
                 >
@@ -220,31 +238,35 @@
                 </p>
               </div>
               <button
-                class="py-3 px-5 md:px-2 md:py-1 border-gray-300 rounded-lg text-[#5C5C5C] roboto w-[49%]"
+                class="py-3 px-5 md:px-2 md:py-1 border-2 copy-btn border-gray-300 rounded-lg text-[#5C5C5C] roboto w-[49%]"
               >
                 <i class="fa-solid fa-copy"></i> Copy
               </button>
               <button
-                class="py-3 px-5 md:px-2 md:py-1 bg-green-600 border-green-500 rounded-lg text-white roboto w-[49%]"
+                class="py-3 px-5 md:px-2 md:py-1 bg-green-600 border-green-500 rounded-lg text-white roboto w-[49%] call-btn"
               >
                 <i class="fa-solid fa-phone"></i> Call
               </button>
             </div>
           </div>
-          <div class="p-5 bg-white rounded-lg shadow-md">
+          <div class="card p-5 bg-white rounded-lg shadow-md">
             <div class="          ">
               <div class="flex items-center justify-between mb-3">
                 <figure class="bg-[#FFE3E2] p-3 w-14 h-14 rounded-lg">
                   <img src="./assets/emergency.png " alt="" />
                 </figure>
-                <span class=""><i class="fa-regular fa-heart"></i></span>
+                <span class="heart"><i class="fa-regular fa-heart"></i></span>
               </div>
               <div class="my-5">
-                <h3 class="text-2xl font-bold hind">নারী ও শিশু সহায়তা</h3>
+                <h3 class="text-2xl font-bold hind service-name">
+                  নারী ও শিশু সহায়তা
+                </h3>
                 <p class="roboto text-[#5C5C5C]">Women & Child Helpline</p>
               </div>
               <div class="mb-5">
-                <h2 class="text-3xl font-bold roboto">109</h2>
+                <h2 class="text-3xl font-bold roboto number service-number">
+                  109
+                </h2>
                 <p
                   class="bg-[#F2F2F2] text-[#5C5C5C] py-3 px-6 w-29 rounded-full"
                 >
@@ -252,31 +274,33 @@
                 </p>
               </div>
               <button
-                class="py-3 px-5 md:px-2 md:py-1 border-gray-300 rounded-lg text-[#5C5C5C] roboto w-[49%]"
+                class="py-3 px-5 md:px-2 md:py-1 border-2 copy-btn border-gray-300 rounded-lg text-[#5C5C5C] roboto w-[49%]"
               >
                 <i class="fa-solid fa-copy"></i> Copy
               </button>
               <button
-                class="py-3 px-5 md:px-2 md:py-1 bg-green-600 border-green-500 rounded-lg text-white roboto w-[49%]"
+                class="py-3 px-5 md:px-2 md:py-1 bg-green-600 border-green-500 rounded-lg text-white roboto w-[49%] call-btn"
               >
                 <i class="fa-solid fa-phone"></i> Call
               </button>
             </div>
           </div>
-          <div class="p-5 bg-white rounded-lg shadow-md">
+          <div class="card p-5 bg-white rounded-lg shadow-md">
             <div class="          ">
               <div class="flex items-center justify-between mb-3">
                 <figure class="bg-[#FFE3E2] p-3 w-14 h-14 rounded-lg">
                   <img src="./assets/emergency.png " alt="" />
                 </figure>
-                <span class=""><i class="fa-regular fa-heart"></i></span>
+                <span class="heart"><i class="fa-regular fa-heart"></i></span>
               </div>
               <div class="my-5">
-                <h3 class="text-2xl font-bold hind">দুদক</h3>
+                <h3 class="text-2xl font-bold hind service-name">দুদক</h3>
                 <p class="roboto text-[#5C5C5C]">Anti-Corruption</p>
               </div>
               <div class="mb-5">
-                <h2 class="text-3xl font-bold roboto">106</h2>
+                <h2 class="text-3xl font-bold roboto number service-number">
+                  106
+                </h2>
                 <p
                   class="bg-[#F2F2F2] text-[#5C5C5C] py-3 px-6 w-29 rounded-full"
                 >
@@ -284,31 +308,35 @@
                 </p>
               </div>
               <button
-                class="py-3 px-5 md:px-2 md:py-1 border-gray-300 rounded-lg text-[#5C5C5C] roboto w-[49%]"
+                class="py-3 px-5 md:px-2 md:py-1 border-2 copy-btn border-gray-300 rounded-lg text-[#5C5C5C] roboto w-[49%]"
               >
                 <i class="fa-solid fa-copy"></i> Copy
               </button>
               <button
-                class="py-3 px-5 md:px-2 md:py-1 bg-green-600 border-green-500 rounded-lg text-white roboto w-[49%]"
+                class="py-3 px-5 md:px-2 md:py-1 bg-green-600 border-green-500 rounded-lg text-white roboto w-[49%] call-btn"
               >
                 <i class="fa-solid fa-phone"></i> Call
               </button>
             </div>
           </div>
-          <div class="p-5 bg-white rounded-lg shadow-md">
+          <div class="card p-5 bg-white rounded-lg shadow-md">
             <div class="          ">
               <div class="flex items-center justify-between mb-3">
                 <figure class="bg-[#FFE3E2] p-3 w-14 h-14 rounded-lg">
                   <img src="./assets/emergency.png " alt="" />
                 </figure>
-                <span class=""><i class="fa-regular fa-heart"></i></span>
+                <span class="heart"><i class="fa-regular fa-heart"></i></span>
               </div>
               <div class="my-5">
-                <h3 class="text-2xl font-bold hind">বিদ্যুৎ বিভ্রাট</h3>
+                <h3 class="text-2xl font-bold hind service-name">
+                  বিদ্যুৎ বিভ্রাট
+                </h3>
                 <p class="roboto text-[#5C5C5C]">Electricity Outage</p>
               </div>
               <div class="mb-5">
-                <h2 class="text-3xl font-bold roboto">16216</h2>
+                <h2 class="text-3xl font-bold roboto number service-number">
+                  16216
+                </h2>
                 <p
                   class="bg-[#F2F2F2] text-[#5C5C5C] py-3 px-6 w-29 rounded-full"
                 >
@@ -316,31 +344,33 @@
                 </p>
               </div>
               <button
-                class="py-3 px-5 md:px-2 md:py-1 border-gray-300 rounded-lg text-[#5C5C5C] roboto w-[49%]"
+                class="py-3 px-5 md:px-2 md:py-1 border-2 copy-btn border-gray-300 rounded-lg text-[#5C5C5C] roboto w-[49%]"
               >
                 <i class="fa-solid fa-copy"></i> Copy
               </button>
               <button
-                class="py-3 px-5 md:px-2 md:py-1 bg-green-600 border-green-500 rounded-lg text-white roboto w-[49%]"
+                class="py-3 px-5 md:px-2 md:py-1 bg-green-600 border-green-500 rounded-lg text-white roboto w-[49%] call-btn"
               >
                 <i class="fa-solid fa-phone"></i> Call
               </button>
             </div>
           </div>
-          <div class="p-5 bg-white rounded-lg shadow-md">
+          <div class="card p-5 bg-white rounded-lg shadow-md">
             <div class="          ">
               <div class="flex items-center justify-between mb-3">
                 <figure class="bg-[#FFE3E2] p-3 w-14 h-14 rounded-lg">
                   <img src="./assets/brac.png " alt="" />
                 </figure>
-                <span class=""><i class="fa-regular fa-heart"></i></span>
+                <span class="heart"><i class="fa-regular fa-heart"></i></span>
               </div>
               <div class="my-5">
-                <h3 class="text-2xl font-bold hind">ব্র্যাক</h3>
+                <h3 class="text-2xl font-bold hind service-name">ব্র্যাক</h3>
                 <p class="roboto text-[#5C5C5C]">Brac</p>
               </div>
               <div class="mb-5">
-                <h2 class="text-3xl font-bold roboto">16445</h2>
+                <h2 class="text-3xl font-bold roboto number service-number">
+                  16445
+                </h2>
                 <p
                   class="bg-[#F2F2F2] text-[#5C5C5C] py-3 px-6 w-29 rounded-full"
                 >
@@ -348,31 +378,33 @@
                 </p>
               </div>
               <button
-                class="py-3 px-5 md:px-2 md:py-1 border-gray-300 rounded-lg text-[#5C5C5C] roboto w-[49%]"
+                class="py-3 px-5 md:px-2 md:py-1 border-2 copy-btn border-gray-300 rounded-lg text-[#5C5C5C] roboto w-[49%]"
               >
                 <i class="fa-solid fa-copy"></i> Copy
               </button>
               <button
-                class="py-3 px-5 md:px-2 md:py-1 bg-green-600 border-green-500 rounded-lg text-white roboto w-[49%]"
+                class="py-3 px-5 md:px-2 md:py-1 bg-green-600 border-green-500 rounded-lg text-white roboto w-[49%] call-btn"
               >
                 <i class="fa-solid fa-phone"></i> Call
               </button>
             </div>
           </div>
-          <div class="p-5 bg-white rounded-lg shadow-md">
+          <div class="card p-5 bg-white rounded-lg shadow-md">
             <div class="          ">
               <div class="flex items-center justify-between mb-3">
                 <figure class="bg-[#FFE3E2] p-3 w-14 h-14 rounded-lg">
                   <img src="./assets/Bangladesh-Railway.png " alt="" />
                 </figure>
-                <span class=""><i class="fa-regular fa-heart"></i></span>
+                <span class="heart"><i class="fa-regular fa-heart"></i></span>
               </div>
               <div class="my-5">
-                <h3 class="text-2xl font-bold hind">বাংলাদেশ রেলওয়ে</h3>
+                <h3 class="text-2xl font-bold hind service-name">
+                  বাংলাদেশ রেলওয়ে
+                </h3>
                 <p class="roboto text-[#5C5C5C]">Bangladesh Railway</p>
               </div>
               <div class="mb-5">
-                <h2 class="text-3xl font-bold roboto">163</h2>
+                <h2 class="text-3xl font-bold roboto service-number">163</h2>
                 <p
                   class="bg-[#F2F2F2] text-[#5C5C5C] py-3 px-6 w-29 rounded-full"
                 >
@@ -380,12 +412,12 @@
                 </p>
               </div>
               <button
-                class="py-3 px-5 md:px-2 md:py-1 border-gray-300 rounded-lg text-[#5C5C5C] roboto w-[49%]"
+                class="py-3 px-5 md:px-2 md:py-1 border-2 copy-btn border-gray-300 rounded-lg text-[#5C5C5C] roboto w-[49%]"
               >
                 <i class="fa-solid fa-copy"></i> Copy
               </button>
               <button
-                class="py-3 px-5 md:px-2 md:py-1 bg-green-600 border-green-500 rounded-lg text-white roboto w-[49%]"
+                class="py-3 px-5 md:px-2 md:py-1 bg-green-600 border-green-500 rounded-lg text-white roboto w-[49%] call-btn"
               >
                 <i class="fa-solid fa-phone"></i> Call
               </button>
@@ -405,59 +437,17 @@
             </div>
             <div>
               <button
+                id="clear-history-btn"
                 class="bg-[#00a63e] px-4 py-2 rounded-lg text-white font-bold text-lg"
               >
                 Clear
               </button>
             </div>
           </div>
-          <div
-            class="bg-[#FAFAFA] flex items-center justify-between p-4 rounded-md mb-2"
-          >
-            <div>
-              <h2 class="roboto text-xl font-semibold">জাতীয় জরুরি সেবা</h2>
-              <p class="text-[#5C5C5C] font-semibold roboto">999</p>
-            </div>
-            <div class="text-[#5C5C5C] font-semibold roboto">11:36:58 AM</div>
-          </div>
-          <div
-            class="bg-[#FAFAFA] flex items-center justify-between p-4 rounded-md mb-2"
-          >
-            <div>
-              <h2 class="roboto text-xl font-semibold">জাতীয় জরুরি সেবা</h2>
-              <p class="text-[#5C5C5C] font-semibold roboto">999</p>
-            </div>
-            <div class="text-[#5C5C5C] font-semibold roboto">11:36:58 AM</div>
-          </div>
-          <div
-            class="bg-[#FAFAFA] flex items-center justify-between p-4 rounded-md mb-2"
-          >
-            <div>
-              <h2 class="roboto text-xl font-semibold">জাতীয় জরুরি সেবা</h2>
-              <p class="text-[#5C5C5C] font-semibold roboto">999</p>
-            </div>
-            <div class="text-[#5C5C5C] font-semibold roboto">11:36:58 AM</div>
-          </div>
-          <div
-            class="bg-[#FAFAFA] flex items-center justify-between p-4 rounded-md mb-2"
-          >
-            <div>
-              <h2 class="roboto text-xl font-semibold">জাতীয় জরুরি সেবা</h2>
-              <p class="text-[#5C5C5C] font-semibold roboto">999</p>
-            </div>
-            <div class="text-[#5C5C5C] font-semibold roboto">11:36:58 AM</div>
-          </div>
-          <div
-            class="bg-[#FAFAFA] flex items-center justify-between p-4 rounded-md mb-2"
-          >
-            <div>
-              <h2 class="roboto text-xl font-semibold">জাতীয় জরুরি সেবা</h2>
-              <p class="text-[#5C5C5C] font-semibold roboto">999</p>
-            </div>
-            <div class="text-[#5C5C5C] font-semibold roboto">11:36:58 AM</div>
-          </div>
+          <div id="call-history"></div>
         </section>
       </section>
     </main>
+    <script src="./script/home.js"></script>
   </body>
 </html>
